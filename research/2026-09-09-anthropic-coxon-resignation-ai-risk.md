@@ -35,15 +35,21 @@
 
 В `knowledge/people/` профилей на Джейкоба Коксона и Эвана Хубингера нет — оба фигуранта новые для базы канала. Есть файл `jared-kaplan.md` (сооснователь Anthropic) — прямого пересечения с этим сюжетом не найдено, в текущих источниках Каплан не упоминается.
 
-## Авторский угол (записано со слов пользователя, не разработано агентом)
+## Кому выгодно — проверка гипотезы редакции
 
-Эта новость — не единичный случай, а сигнал более широкого паттерна: попытки взять ИИ под государственный контроль, по аналогии с тем, как ранее произошло с криптовалютой. Технология, разработанная горсткой энтузиастов/исследователей как независимая, постепенно затягивается в орбиту государственных интересов ("должна служить государству"). Уход Коксона и признание Хубингера читаются как усиливающие позицию тех, кто выступает за жёсткий контроль ИИ со стороны государства — то есть объективно ослабляющие сторону "независимого свободного ИИ", даже если сами авторы заявлений это так не формулировали.
+Рабочая гипотеза, высказанная в редакции: тред Коксона и синхронный отклик Хубингера могут быть частью PR-эффекта, объективно выгодного конкретному игроку, а не просто личной инициативой двух сотрудников. Проверено целевым ресёрчем, отдельно от общего сбора фактуры выше.
 
-**Как показать это не как единичный случай, а во всей ширине** (план для этапа B):
-- Найти другие похожие уходы/предупреждения исследователей ИИ за последний год (не только Коксон) — через Шаг 2-3 (карта мира, транскрипты).
-- Провести явную, фактическую параллель с 1-2 конкретными событиями регулирования крипты (не абстрактно) — как структурный прецедент того же паттерна.
-- В «Экосистемной связке» — не пересказ события, а кто выигрывает от усиления гос. контроля над ИИ (национальная безопасность, крупные игроки против новых участников), а не только слова одного бывшего сотрудника.
-- В «Практических выводах» — конкретный сигнал, за чем следить дальше (например, законодательные инициативы про обязательную отчётность/аудит моделей), чтобы зритель уходил не с «один человек испугался», а с «вот паттерн, вот что проверить самому».
+**Тайминг.** Тред в X и эксклюзивное интервью Коксона Wall Street Journal вышли синхронно 8–9 сентября 2026; по данным Bloomberg, именно WSJ-эксклюзив разогнал охват. Статус "эксклюзив" по определению жанра предполагает согласование с изданием заранее — спонтанным этот выход быть не может структурно. Точных таймстемпов по часам не найдено. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-09/anthropic-worker-quits-over-ai-firms-gambling-with-our-lives))
+
+**Коксон.** Публичных связей с PR-агентами, книжными сделками, спикерскими контрактами или AI-safety advocacy-организациями (Center for AI Safety, Future of Life Institute, MIRI, PauseAI) не нашлось. По данным Yahoo Finance, он не наращивает публичную трибуну, а уходит из ИИ-индустрии целиком — профиль, нетипичный для оплаченного спикера.
+
+**Хубингер.** Бывший research fellow MIRI, соавтор основополагающей статьи 2019 года "Risks from Learned Optimization" (mesa-оптимизация, deceptive alignment). Его позиция по x-риску — многолетняя и задокументированная, не реакция под момент. ([LongtermWiki](https://www.longtermwiki.com/people/evan-hubinger))
+
+**Прецедент — второй такой уход из Anthropic за 7 месяцев.** 9 февраля 2026 руководитель Safeguards Research team Anthropic Мринанк Шарма (Mrinank Sharma) ушёл с почти идентичной по драматургии публичной запиской: "Мир в опасности. И не только от ИИ или биооружия, а от целого ряда взаимосвязанных кризисов". Писал о давлении внутри компании "откладывать в сторону то, что действительно важно". Это не единичный случай, а повторяющийся жанр именно в Anthropic. ([Forbes](https://www.forbes.com/sites/conormurray/2026/02/09/anthropic-ai-safety-researcher-warns-of-world-in-peril-in-resignation/))
+
+**Кому выгодно структурно — ключевая находка.** Anthropic ведёт задокументированную, количественную регуляторную кампанию: $20 млн в Public First Action в феврале 2026, ещё $20 млн в июле (итого $40 млн) — организации, продвигающей кандидатов, поддерживающих регулирование ИИ, на выборах 2026 года ([CNBC](https://www.cnbc.com/2026/02/12/anthropic-gives-20-million-to-group-pushing-for-ai-regulations-.html), [Axios](https://www.axios.com/2026/07/22/anthropic-doubles-funding-ai-policy-fight-elections)). Лоббистские расходы компании за первую половину 2026 — $3,5 млн против $3,1 млн за весь 2025 год, с фокусом на экспортный контроль чипов и стандарты безопасности ИИ ([Axios](https://www.axios.com/2026/07/21/anthropic-ramps-up-lobbying-spending-ai-policy-fights)). 14 октября 2025 года — за 11 месяцев до треда Коксона — советник Белого дома по ИИ Дэвид Сакс публично написал, что Anthropic "ведёт изощрённую стратегию regulatory capture, построенную на нагнетании страха" и "несёт основную ответственность за регуляторную лихорадку на уровне штатов" ([Bloomberg Law](https://news.bloomberglaw.com/artificial-intelligence/anthropic-is-running-a-strategy-based-on-fear-mongering-sacks)).
+
+**Вывод.** Версия "Коксону заплатили" фактурой не подтверждается — ни финансового мотива, ни организационных связей у него не нашлось, придумывать их нельзя. Но версия структурной выгоды — обоснована: синхронный WSJ-эксклюзив подтверждает минимальную подготовку заранее; это уже второй почти идентичный по форме драматичный safety-уход именно из Anthropic за 7 месяцев; и результирующий эффект (нагнетание страха вокруг ИИ) прямо совпадает с параллельной, измеримой в долларах лоббистской кампанией той же компании — за которую её уже публично обвиняли в regulatory capture до этого случая. Самое сильное свидетельство — не сам тред, а связка «прецедент Шармы + цифры лоббирования + обвинение Сакса»: она показывает не заговор вокруг конкретно Коксона, а то, что подобные эпизоды объективно работают в пользу одного игрока независимо от личных мотивов участников.
 
 ## Источники
 
@@ -64,3 +70,10 @@
 - [Moneywise — 'Gambling with our lives': AI researcher quits Anthropic](https://moneywise.com/news/top-stories/jacob-coxon-openai-anthropic-ai-safety-concerns)
 - [Qz — Jacob Coxon quits Anthropic over self-improving AI safety fears](https://qz.com/anthropic-researcher-quits-self-improving-ai-safety-090926)
 - [TechRadar — Top AI researcher says AI will end humanity and we should stop developing it now — but don't worry, Elon Musk disagrees](https://www.techradar.com/pro/top-ai-researcher-says-ai-will-end-humanity-and-we-should-stop-developing-it-now-but-dont-worry-elon-musk-disagrees)
+- [Bloomberg — Anthropic worker quits over AI firm's "gambling with our lives"](https://www.bloomberg.com/news/articles/2026-09-09/anthropic-worker-quits-over-ai-firms-gambling-with-our-lives)
+- [LongtermWiki — Evan Hubinger, ex-MIRI, "Risks from Learned Optimization" (2019)](https://www.longtermwiki.com/people/evan-hubinger)
+- [Forbes — Mrinank Sharma resignation, "world in peril" (9 февраля 2026)](https://www.forbes.com/sites/conormurray/2026/02/09/anthropic-ai-safety-researcher-warns-of-world-in-peril-in-resignation/)
+- [CNBC — Anthropic gives $20 million to Public First Action](https://www.cnbc.com/2026/02/12/anthropic-gives-20-million-to-group-pushing-for-ai-regulations-.html)
+- [Axios — Anthropic doubles funding for AI policy fight to $40M total](https://www.axios.com/2026/07/22/anthropic-doubles-funding-ai-policy-fight-elections)
+- [Axios — Anthropic lobbying spending $3.5M H1 2026 vs $3.1M all of 2025](https://www.axios.com/2026/07/21/anthropic-ramps-up-lobbying-spending-ai-policy-fights)
+- [Bloomberg Law — David Sacks on Anthropic "fear-mongering" strategy (14 октября 2025)](https://news.bloomberglaw.com/artificial-intelligence/anthropic-is-running-a-strategy-based-on-fear-mongering-sacks)
