@@ -36,6 +36,17 @@ For each actor that matters to the story:
 Use this to predict behavior and catch contradictions, not as a box-ticking exercise — three actors
 analyzed with real specificity beat ten analyzed generically.
 
+**Always close this section with cui bono — who benefits, who wins from what's happening.** Not
+optional, not just for stories that look like scandals. Every event redistributes advantage to
+someone even when no one orchestrated it: ask who is structurally better off after this event than
+before it, whether or not any actor caused it on purpose. Separate two distinct claims and don't
+collapse them into one: (1) who benefits *structurally* from the outcome — usually answerable from
+public facts (money, market position, regulatory advantage, competitive positioning) — versus (2)
+whether anyone *engineered* the event to benefit — a much stronger claim that needs its own
+evidence (coordination, timing, financial ties) and must be labeled a hypothesis, never asserted as
+fact without it. A structural beneficiary with zero evidence of orchestration is still worth naming
+plainly — that's not an accusation, it's mapping the incentive.
+
 ### Timeline → causal map, with a fact/claim/gap tag on each entry
 Build the sequence first (date → event → source), then ask which events actually caused or enabled which
 others rather than just following each other in time. Tag each entry:
@@ -72,7 +83,7 @@ How would someone who profits from the opposite conclusion read the same facts?
 1. **Define the focus** — what event/situation, what's the goal (understand it, prep an interview, build a
    case), any constraints (time, access, risk). 2–4 sentences.
 2. **Actors & incentives** — the real list, not a padded one. Three to seven actors is typical; more only
-   if the situation genuinely has that many independent players.
+   if the situation genuinely has that many independent players. Close with cui bono (see above).
 3. **Timeline** — chronological, each entry tagged fact/claim/gap.
 4. **Questions** — generated from the specific gaps and contradictions found above, grouped by who they're
    for. Not a fixed-size checklist run mechanically against every situation.
