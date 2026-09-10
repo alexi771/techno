@@ -78,6 +78,31 @@ POSITIONING (источник: EIP-8288, X-пост Бутерина 9.09.2026, 
 
 Предупреждение: не подавать это как "Бутерин единолично решил изменить Ethereum" — это предложение, которое должно пройти согласование ~60 исследователей и 9 команд клиентов (см. known-person check). Не пересказывать технические детали как решённое и принятое (EIP ещё не хардфорк). Не растягивать тему в общий разбор "quantum threat to crypto" ради драмы — источники по существу вопроса скупы (форумные возражения не раскрыты), раздувать неопределённость в сенсацию нельзя. Если брать тему — держать вход именно через StarkWare/Ethereum L1 напряжение и через контраст с Bitcoin/Сэйлором, а не через пересказ механики EIP как самоцель.
 
+## Первоисточник (проверено лично, оригинал на английском)
+
+Облачная сессия routine не смогла достучаться напрямую до eips.ethereum.org и x.com (сетевая политика прокси блокировала оба домена) и работала только через агрегацию прессы. Проверила лично: eips.ethereum.org открылся, x.com по-прежнему отдаёт 402 Payment Required (то же самое через fxtwitter.com — редиректит на x.com; nitter.net временно не работает из-за cease-and-desist от X Corp, полученного 24.08.2026). Цитату твита перепроверила через независимый WebSearch — совпадает дословно с тем, что нашла routine.
+
+**EIP-8288 — заголовок и техническое содержание (eips.ethereum.org/EIPS/eip-8288, оригинал на английском):**
+
+> # EIP-8288: Frame Type for PQ Sig and STARK Aggregation
+
+Ключевые технические детали, отсутствовавшие в пересказах прессы (важно для точности сценария, если он будет углубляться в механику):
+
+- Вводит новый режим фрейма `DEP_VERIFY_FRAME_MODE` для транзакций типа EIP-8141, позволяющий агрегировать пост-квантовые подписи и STARK-доказательства через рекурсивный STARK.
+- **Dependency Verification Frame**: транзакции декларируют тройки `(scheme, data_hash, verification_key_hash)` как зависимости; дословно из спецификации — они "are not executed as EVM code; instead, they are recorded as dependencies that must be proven valid by the recursive STARK in the block."
+- **Поддерживаемые схемы**: `LEANSPHINCS_SCHEME` (0x10, хэш-based пост-квантовые подписи) и `LEANSTARK_SCHEME` (0x11, STARK-доказательства).
+- **Точные фиксированные газовые издержки верификации** (это точнее, чем округлённая пресс-цифра "10 млн → десятки тысяч" — тот диапазон про полную транзакцию с несколькими доказательствами, а это цена одной проверки): leanSPHINCS — 3000 газа за подпись; leanSTARK — 30 000 газа за доказательство.
+- Каждый блок обязан содержать поле `recursive_stark` в заголовке, агрегирующее все зависимости по всем транзакциям блока; доказательство генерируется через Lean Ethereum tooling.
+- **Мемпул-агрегация**: wrapper-объекты транслируются каждые 1000 мс, два режима — Mode 0 (прямые зависимости с индивидуальными доказательствами) и Mode 1 (рекурсивный STARK, покрывающий все зависимости) — прогрессивная агрегация от пользователя через узлы мемпула к билдерам, снижает нагрузку на пропускную способность.
+- **Совместимость с FOCIL** (fork-choice enforced inclusion lists) — списки включения могут нести поля `recursive_stark`, то есть предагрегированные доказательства зависимостей можно переносить прямо внутри inclusion list.
+- **DoS-защита**: максимум 16 leanSPHINCS-зависимостей на транзакцию, максимум 1 leanSTARK-зависимость на транзакцию, максимум 256 зависимостей на фрейм, лимиты на уровне мемпула. Дословно: "limits ensure that the data stored in the dependency frames is bounded by the same order of magnitude as the data that would be stored in a traditional transaction."
+
+**Твит Бутерина (X, 9.09.2026, @VitalikButerin, проверено через независимый WebSearch — прямой доступ к x.com недоступен из-за 402):**
+
+> "A note on recursive STARK mempools (EIP-8288)... This is an EIP that I am hoping we can get included in I-star (the fork after Hegotá) that you can think of as the next step after Frames, that would unlock extreme amounts of power."
+
+Совпадает дословно с цитатой, которую routine получила через пресс-агрегацию — независимое подтверждение точности.
+
 ## Источники
 
 - [PANews — Vitalik Introduces EIP-8288: Recursive STARK Mempool Expected to Reduce Costs for Quantum-Safe Signatures and Privacy Transactions](https://panews.io/articles/01a086dd-7a07-7517-9406-6b8e4f4041fc)
